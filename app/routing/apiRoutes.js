@@ -1,5 +1,5 @@
 var path = require("path");
-var friends = require('../app/data/friends.js');
+var friends = require('../data/friends.js');
 
 
 
