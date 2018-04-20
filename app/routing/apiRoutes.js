@@ -34,7 +34,7 @@ var getFriends = function showFriends(app){
         } 
 
         console.log("Closest match: " + friends[match].name);
-
+        res.json(friends[match]);
       
 
 
