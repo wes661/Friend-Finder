@@ -147,7 +147,7 @@
       var newFriend = {
         name: $("#name").val().trim(),
         picture: $("#picture").val().trim(),
-        score:[
+        scores:[
             parseInt(radioValue1),
             radioValue2, 
             radioValue3,
@@ -160,9 +160,9 @@
             radioValue10
         ]
       };
-    for(i = 0; i < newFriend.score.length; i++){
-      console.log(parseInt(newFriend.score[i]));
-    }
+    // for(i = 0; i < newFriend.score.length; i++){
+    //   console.log(parseInt(newFriend.score[i]));
+    // }
 
       // Question: What does this code do??
       $.post("/api/friends", newFriend)
