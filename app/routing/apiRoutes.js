@@ -41,7 +41,7 @@ var getFriends = function showFriends(app){
 
         
         friends.push(newFriend);
-        res.json(newFriend);
+        // res.json(newFriend);
     });
 
 }; 
