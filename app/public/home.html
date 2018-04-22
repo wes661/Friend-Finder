@@ -10,12 +10,57 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <center><h1 class="display-3">Friend Finder</h1></center>
-          <center><p class="lead"></p>
-          <a href="/survey"><button type="button" class="btn btn-primary">Take Survey</button></center></a> 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 mainCol">
+          <center><p>Which spy will you match with?</p></center>
+          <center><a href="/survey"><button type="button" class="btn btn-danger survey-btn">Take Survey</button></a> </center>
         </div>
+       
       </div>
+
+          
+    </div>
+      
+
+
+
 </body>
+
+<style>
+
+  body{
+    height: 100%;
+	  margin: 0;
+  	width:100%;
+	  color: rgb(252, 249, 249);
+  }
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://i.imgur.com/6N3cqxa.jpg');
+  }
+  .mainCol{
+    position: absolute;
+    bottom: 50%
+  }
+
+  .survey-btn{
+    font-size: 1.5em;
+  }
+  p{
+    font-size: 2em;
+    font-weight: 600;
+    -webkit-text-stroke: 1px black;
+  }
+  
+  
+  
+</style>
 </html>
