@@ -1,13 +1,15 @@
 # Friend-Finder
 # Friend Finder - Node and Express Servers
 
+View app here: https://lit-fjord-80528.herokuapp.com/
+
 Friend finder....with a twist
 
 This app functions as the friend finder should but I themed it based on the TV show Archer.
 
 It is loaded with 8 characters from the show and based on your answers it'll match you with one of the characters initially.
 
-If other users are added they will be possible matches.
+If other users are added they will be possible matches of course.
 
 ### Overview
 
