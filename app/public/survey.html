@@ -7,6 +7,8 @@
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -16,7 +18,19 @@
 </head>
 <body>
     <div class="jumbotron">
-        <center><h1 class="display-3">Survey</h1></center>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://upload.wikimedia.org/wikipedia/ar/archive/b/bd/20170615234408%21Archer_Title_Card.png" class="img-fluid" alt="Responsive image">
+            </div>
+                <div class="col-md-8">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h1 class="display-3">Who will you match with??</h1>
+            </div>
+        </div>    
     </div>
     <div class="row">
         <div class="col-md-3"></div>
@@ -38,7 +52,9 @@
     </div>          
             <br>
     <div class="row"> 
-        <div class="col-md-3"></div>
+        <div class="col-md-3">
+                
+        </div>
         <div class="col-md-3">    
                 <form class="radioBtn" action="">
                     <label>Are you a drinker?</label><br>
@@ -59,7 +75,7 @@
                 </form>
                 <br>
                 <form class="radioBtn" action="">
-                    <label>Are you preficient with different types of weapons?</label><br>
+                    <label>Are you proficient with different types of weapons?</label><br>
                     <input type="radio" name="score3" value="1"> 1 Strongly disagree<br>
                     <input type="radio" name="score3" value="2"> 2<br>
                     <input type="radio" name="score3" value="3"> 3<br>
@@ -131,13 +147,15 @@
                     <input type="radio" name="score10" value="5"> 5 Strongly agree<br>
                 </form>
         </div> 
-        <div class="col-md-3"></div>       
+        <div class="col-md-3">
+                
+        </div>       
     </div>            
-                <br>
-                <!-- Button trigger modal -->
-                <center><button type="button" id="add-btn" class="btn btn-primary" data-toggle="modal"                         target="#friendModal">
-                    Get Match!
-                </button></center>
+        <br>
+        <!-- Button trigger modal -->
+        <center><button type="button" id="add-btn" class="btn btn-danger" data-toggle="modal"                         target="#friendModal">
+            Get Match!
+        </button></center>
       
       <!-- Modal -->
     <div class="row">
@@ -154,8 +172,6 @@
                         <div class="modal-body">
                             <center><img id="friendPic" src="" alt="No Image" width = 250px></center>
                             <br>
-                            <center><embed id="friendVid" width="350" height="200" src="" frameborder="0" allow="autoplay" allowfullscreen></embed>
-                            </center>
                         </div>
                     </div>
                 </div>
@@ -228,7 +244,24 @@
 </body>
 
 <style>
-
+    body{
+        color: white;
+        background-color: black;
+    }
+    .jumbotron{
+        background-color: black;
+        padding: 0;
+    }
+    .jumbotron, .modal-content, label, #add-btn{
+        font-family: 'Luckiest Guy', cursive;
+    }
+    .modal-content{
+        background-color: rgb(39, 33, 33);
+    }
+    label{
+        font-size: 1.3em;
+    }
+    
     
 </style>
 </html>

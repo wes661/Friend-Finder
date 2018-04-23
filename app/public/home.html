@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -16,7 +17,22 @@
           <center><p>Which spy will you match with?</p></center>
           <center><a href="/survey"><button type="button" class="btn btn-danger survey-btn">Take Survey</button></a> </center>
         </div>
+        <div class="row archer">
+            <div class="col-md-6">
+                <img src="https://image.ibb.co/gHHWJc/archer.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-3"> </div>
+            <div class="col-md-3"></div>
+        </div>
        
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="Otherbuttons">
+            <a href="/api/friends"><button type="button" class="btn btn-danger api-btn"> api/friends</button></a>
+            <a href="https://github.com/wes661/Friend-Finder"><button type="button" class="btn btn-danger github-btn">Github</button></a>
+          </div>  
+        </div>
       </div>
 
           
@@ -30,29 +46,25 @@
 <style>
 
   body{
-    height: 100%;
-	  margin: 0;
-  	width:100%;
 	  color: rgb(252, 249, 249);
-  }
-  body::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0px;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background-image: url('https://i.imgur.com/6N3cqxa.jpg');
-  }
-  .mainCol{
-    position: absolute;
-    bottom: 50%
-  }
+    font-family: 'Luckiest Guy', cursive;
+    background-color:  rgb(39, 33, 33);
 
-  .survey-btn{
+  }
+  
+
+  .survey-btn, .api-btn, .github-btn{
     font-size: 1.5em;
+  }
+  .Otherbuttons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .archer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
   p{
     font-size: 2em;
